@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bank App</h1>
+    <div class="balance">
+      <h2>Balance: <span id="balance">₹0.00</span></h2>
+    </div>
+    <div class="transactions">
+      <h3>Transactions</h3>
+      <ul id="transaction-list"></ul>
+    </div>
+    <div class="transaction-form">
+      <h3>Add Transaction</h3>
+      <input type="text" id="description" placeholder="Description" required>
+      <input type="number" id="amount" placeholder="Amount (positive for income, negative for expense)" required>
+      <button id="add-transaction">Add Transaction</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
